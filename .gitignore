@@ -1,0 +1,11 @@
+
+# Default gitignore content
+.DS_Store
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+
+# Ignore all html files except for index.html
+*.html
