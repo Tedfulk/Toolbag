@@ -1,25 +1,24 @@
-# My Daily Dev Toolkit
+# Developer Toolkit Repository
 
-Hello there! 👋 This README is all about the tools, shortcuts, and snippets that make my life easier as a developer. Feel free to explore and maybe you'll find something useful!
+This repository is a collection of tools, shortcuts, and code snippets that are useful for software development. It serves as a quick reference guide and a way to share best practices and useful code snippets. The repository is organized into sections for command line tools, keyboard shortcuts, prompt templates, and reusable code snippets in Python, JavaScript, and SQL.
 
 ## Table of Contents
 
-- [My Daily Dev Toolkit](#my-daily-dev-toolkit)
+- [Developer Toolkit Repository](#developer-toolkit-repository)
   - [Table of Contents](#table-of-contents)
   - [Command Line Tools](#command-line-tools)
   - [Keyboard Shortcuts](#keyboard-shortcuts)
   - [Prompt Templates](#prompt-templates)
   - [Reusable Code Snippets](#reusable-code-snippets)
-
----
+  - [Git commands list](#git-commands-list)
 
 ## Command Line Tools
 
-- **curl**: For transferring data
-- **jq**: For JSON parsing
-- **htop**: For monitoring system resources
+This section provides a list of useful command line tools for tasks such as data transfer, JSON parsing, and system resource monitoring. See the [Command Line Tools](#command-line-tools). #TODO: create this section.
 
 ## Keyboard Shortcuts
+
+This section provides a list of common keyboard shortcuts for tasks such as finding files and symbols, changing tabs, and selecting between brackets for example. See the [Keyboard Shortcuts](#keyboard-shortcuts).
 
 | Key                     | Command                                        |
 | ----------------------- | ---------------------------------------------- |
@@ -49,30 +48,12 @@ Hello there! 👋 This README is all about the tools, shortcuts, and snippets th
 
 ## Prompt Templates
 
-- **Git Commit Message**: `[JIRA-ID] - Brief description`
-- **Pull Request**: `Feature: Brief description`
+This section provides templates for Git commit messages and pull requests to ensure consistency and clarity. See the [Prompt Templates](prompt_templates/README.md).
 
 ## Reusable Code Snippets
 
-- **Python**: [Python Snippets](snippets/python_snippets/python_dict_snippets.md)
-- **JavaScript**: [JavaScript Snippets](snippets/javascript_snippets/javascript_snippets.md)
-- **SQL**: [SQL Snippets](sql_snippets.md)
-- **Bash**: [Bash Snippets](bash_snippets.md)
-- **Git**: [Git Snippets](git_snippets.md)
-- **Markdown**: [Markdown Snippets](markdown_snippets.md)
-- **HTML**: [HTML Snippets](html_snippets.md)
-- **CSS**: [CSS Snippets](css_snippets.md)
-- **Docker**: [Docker Snippets](docker_snippets.md)
-- **AWS**: [AWS Snippets](aws_snippets.md)
-- **Jenkins**: [Jenkins Snippets](jenkins_snippets.md)
-- **VS Code**: [VS Code Snippets](vscode_snippets.md)
-- **Mac**: [Mac Snippets](mac_snippets.md)
-- **Regex**: [Regex Snippets](regex_snippets.md)
-- **YAML**: [YAML Snippets](yaml_snippets.md)
-- **JSON**: [JSON Snippets](json_snippets.md)
-- **XML**: [XML Snippets](xml_snippets.md)
-- **CSV**: [CSV Snippets](csv_snippets.md)
-- **TensorFlow**: [TensorFlow Snippets](tensorflow_snippets.md)
-- **PyTorch**: [PyTorch Snippets](pytorch_snippets.md)
-- **svelte**: [svelte Snippets](svelte_snippets.md)
-- **svg**: [svg Snippets](svg_snippets.md)
+This section provides reusable code snippets in Python, JavaScript, and SQL. These snippets cover common tasks and can be copied and pasted into your code to save time. See the [Python Snippets](snippets/python_snippets/python_dict_snippets.md), [JavaScript Snippets](snippets/javascript_snippets/javascript_snippets.md), and [SQL Snippets](sql_snippets.md) for more details.
+
+## Git commands list
+
+The `git_commands_list.md` file provides a list of common Git commands and their usage. This can be a handy reference when you need to perform Git operations. See the [Git Commands List](git_commands_list/git_commands_list.md) for more details.

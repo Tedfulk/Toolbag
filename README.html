@@ -2,7 +2,7 @@
     <html>
     <head>
         <meta charset="UTF-8">
-        <title>My Daily Dev Toolkit &#x1f6e0;&#xfe0f;</title>
+        <title>Developer Toolkit Repository</title>
         <style>
 /* From extension vscode.github */
 /*---------------------------------------------------------------------------------------------
@@ -40,378 +40,133 @@
         
     </head>
     <body class="vscode-body vscode-light">
-        <h1 id="my-daily-dev-toolkit-️">My Daily Dev Toolkit 🛠️</h1>
-<p>Hello there! 👋 This README is all about the tools, shortcuts, and snippets that make my life easier as a developer. Feel free to explore and maybe you'll find something useful!</p>
-<h2 id="table-of-contents-">Table of Contents 📚</h2>
+        <h1 id="developer-toolkit-repository">Developer Toolkit Repository</h1>
+<p>This repository is a collection of tools, shortcuts, and code snippets that are useful for software development. It serves as a quick reference guide and a way to share best practices and useful code snippets. The repository is organized into sections for command line tools, keyboard shortcuts, prompt templates, and reusable code snippets in Python, JavaScript, and SQL.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
 <ul>
-<li><a href="#my-daily-dev-toolkit-%EF%B8%8F">My Daily Dev Toolkit 🛠️</a>
+<li><a href="#developer-toolkit-repository">Developer Toolkit Repository</a>
 <ul>
-<li><a href="#table-of-contents-">Table of Contents 📚</a></li>
-<li><a href="#command-line-tools-%EF%B8%8F">Command Line Tools 🖥️</a></li>
-<li><a href="#keyboard-shortcuts-%EF%B8%8F">Keyboard Shortcuts ⌨️</a></li>
-<li><a href="#prompt-templates-">Prompt Templates 📝</a></li>
-<li><a href="#reusable-code-snippets-">Reusable Code Snippets 💾</a></li>
-<li><a href="#git-commands-">Git Commands 📖</a></li>
-<li><a href="#pre-commit-hooks-">Pre-Commit Hooks 🎣</a>
-<ul>
-<li><a href="#installing-pre-commit-%EF%B8%8F">Installing Pre-Commit 🛠️</a></li>
-<li><a href="#creating-custom-git-hooks">Creating Custom Git Hooks</a></li>
+<li><a href="#table-of-contents">Table of Contents</a></li>
+<li><a href="#command-line-tools">Command Line Tools</a></li>
+<li><a href="#keyboard-shortcuts">Keyboard Shortcuts</a></li>
+<li><a href="#prompt-templates">Prompt Templates</a></li>
+<li><a href="#reusable-code-snippets">Reusable Code Snippets</a></li>
+<li><a href="#git-commands-list">Git commands list</a></li>
 </ul>
 </li>
 </ul>
-</li>
-</ul>
-<hr>
-<h2 id="command-line-tools-️">Command Line Tools 🖥️</h2>
-<ul>
-<li><strong>curl</strong>: For transferring data</li>
-<li><strong>jq</strong>: For JSON parsing</li>
-<li><strong>htop</strong>: For monitoring system resources</li>
-</ul>
-<h2 id="keyboard-shortcuts-️">Keyboard Shortcuts ⌨️</h2>
-<ul>
-<li><strong>Ctrl + C</strong>: Copy</li>
-<li><strong>Ctrl + V</strong>: Paste</li>
-<li><strong>Ctrl + Z</strong>: Undo</li>
-<li><strong>Alt + Tab</strong>: Switch between open applications</li>
-</ul>
-<h2 id="prompt-templates-">Prompt Templates 📝</h2>
-<ul>
-<li><strong>Git Commit Message</strong>: <code>[JIRA-ID] - Brief description</code></li>
-<li><strong>Pull Request</strong>: <code>Feature: Brief description</code></li>
-</ul>
-<h2 id="reusable-code-snippets-">Reusable Code Snippets 💾</h2>
-<h2 id="git-commands-">Git Commands 📖</h2>
+<h2 id="command-line-tools">Command Line Tools</h2>
+<p>This section provides a list of useful command line tools for tasks such as data transfer, JSON parsing, and system resource monitoring. See the <a href="#command-line-tools">Command Line Tools</a>. #TODO: create this section.</p>
+<h2 id="keyboard-shortcuts">Keyboard Shortcuts</h2>
+<p>This section provides a list of common keyboard shortcuts for tasks such as finding files and symbols, changing tabs, and selecting between brackets for example. See the <a href="#keyboard-shortcuts">Keyboard Shortcuts</a>.</p>
 <table>
 <thead>
 <tr>
-<th>Category</th>
+<th>Key</th>
 <th>Command</th>
-<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Staging Changes</strong></td>
-<td></td>
-<td></td>
+<td>shift+cmd+f</td>
+<td>-workbench.action.findInFiles</td>
 </tr>
 <tr>
-<td></td>
-<td><code>git add &lt;file&gt;</code></td>
-<td>Stage specific files.</td>
+<td>shift+cmd+f</td>
+<td>-workbench.action.terminal.searchWorkspace</td>
 </tr>
 <tr>
-<td></td>
-<td><code>git add .</code></td>
-<td>Stage all new and modified files.</td>
+<td>alt+r</td>
+<td>python.execInTerminal</td>
 </tr>
 <tr>
-<td></td>
-<td><code>git add -u</code></td>
-<td>Stage changes only in tracked files.</td>
+<td>ctrl+j</td>
+<td>editor.action.rename</td>
 </tr>
 <tr>
-<td></td>
-<td><code>git add -A</code></td>
-<td>Stage all changes.</td>
+<td>ctrl+z</td>
+<td>editor.action.revealDefinition</td>
 </tr>
 <tr>
-<td></td>
-<td><code>git add -p</code></td>
-<td>Interactively stage parts of files.</td>
+<td>f12</td>
+<td>-editor.action.revealDefinition</td>
 </tr>
 <tr>
-<td><strong>Committing Changes</strong></td>
-<td></td>
-<td></td>
+<td>ctrl+shift+space</td>
+<td>workbench.files.action.focusFilesExplorer</td>
 </tr>
 <tr>
-<td></td>
-<td><code>git commit -m &quot;&lt;message&gt;&quot;</code></td>
-<td>Commit staged changes with a message.</td>
+<td>ctrl+shift+f</td>
+<td>workbench.view.search.focus</td>
 </tr>
 <tr>
-<td></td>
-<td><code>git commit -a -m &quot;&lt;message&gt;&quot;</code></td>
-<td>Stage and commit modified and deleted files.</td>
+<td>cmd+]</td>
+<td>workbench.action.navigateForward</td>
 </tr>
 <tr>
-<td></td>
-<td><code>git commit --amend</code></td>
-<td>Modify the last commit.</td>
+<td>ctrl+shift+-</td>
+<td>-workbench.action.navigateForward</td>
 </tr>
 <tr>
-<td></td>
-<td><code>git commit --amend --no-edit</code></td>
-<td>Reuse previous commit message.</td>
+<td>cmd+e</td>
+<td>workbench.view.explorer</td>
 </tr>
 <tr>
-<td><strong>Viewing Changes</strong></td>
-<td></td>
-<td></td>
+<td>shift+cmd+e</td>
+<td>-workbench.view.explorer</td>
 </tr>
 <tr>
-<td></td>
-<td><code>git status</code></td>
-<td>Show working tree status.</td>
+<td>cmd+l</td>
+<td>editor.action.selectHighlights</td>
 </tr>
 <tr>
-<td></td>
-<td><code>git diff</code></td>
-<td>Show changes between working tree and index.</td>
+<td>shift+cmd+l</td>
+<td>-editor.action.selectHighlights</td>
 </tr>
 <tr>
-<td></td>
-<td><code>git diff --staged</code></td>
-<td>Show differences between index and latest commit.</td>
+<td>cmd+[</td>
+<td>workbench.action.navigateBack</td>
 </tr>
 <tr>
-<td></td>
-<td><code>git log</code></td>
-<td>Show commit logs.</td>
+<td>ctrl+-</td>
+<td>-workbench.action.navigateBack</td>
 </tr>
 <tr>
-<td></td>
-<td><code>git log --oneline</code></td>
-<td>Show logs in a shorter format.</td>
+<td>ctrl+shift+alt+cmd+r</td>
+<td>workbench.action.splitEditorRight</td>
 </tr>
 <tr>
-<td><strong>Undoing Changes</strong></td>
-<td></td>
-<td></td>
+<td>alt+cmd+p</td>
+<td>-toggleSearchPreserveCase</td>
 </tr>
 <tr>
-<td></td>
-<td><code>git reset &lt;file&gt;</code></td>
-<td>Unstage specific files but keep the changes.</td>
+<td>ctrl+l</td>
+<td>workbench.action.gotoLine</td>
 </tr>
 <tr>
-<td></td>
-<td><code>git reset</code></td>
-<td>Unstage all changes.</td>
+<td>cmd+t</td>
+<td>-workbench.action.showAllSymbols</td>
 </tr>
 <tr>
-<td></td>
-<td><code>git reset --soft HEAD~1</code></td>
-<td>Undo last commit but keep changes staged.</td>
+<td>cmd+p</td>
+<td>-workbench.action.quickOpenNavigateNextInFilePicker</td>
 </tr>
 <tr>
-<td></td>
-<td><code>git reset --hard HEAD~1</code></td>
-<td>Undo last commit and discard changes.</td>
+<td>ctrl+shift+alt+cmd+f</td>
+<td>extension.fuzzySearch</td>
 </tr>
 <tr>
-<td></td>
-<td><code>git revert &lt;commit&gt;</code></td>
-<td>Create a new commit that undoes a previous one.</td>
-</tr>
-<tr>
-<td><strong>Branching and Merging</strong></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td><code>git branch</code></td>
-<td>List local branches.</td>
-</tr>
-<tr>
-<td></td>
-<td><code>git branch &lt;name&gt;</code></td>
-<td>Create a new branch.</td>
-</tr>
-<tr>
-<td></td>
-<td><code>git checkout &lt;branch&gt;</code></td>
-<td>Switch to a specific branch.</td>
-</tr>
-<tr>
-<td></td>
-<td><code>git checkout -b &lt;new-branch&gt;</code></td>
-<td>Create and switch to a new branch.</td>
-</tr>
-<tr>
-<td></td>
-<td><code>git merge &lt;branch&gt;</code></td>
-<td>Merge another branch.</td>
-</tr>
-<tr>
-<td></td>
-<td><code>git rebase &lt;base&gt;</code></td>
-<td>Reapply commits on top of another base.</td>
-</tr>
-<tr>
-<td><strong>Remote Operations</strong></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td><code>git clone &lt;repo&gt;</code></td>
-<td>Clone a remote repository.</td>
-</tr>
-<tr>
-<td></td>
-<td><code>git fetch &lt;remote&gt;</code></td>
-<td>Download changes from remote.</td>
-</tr>
-<tr>
-<td></td>
-<td><code>git pull &lt;remote&gt; &lt;branch&gt;</code></td>
-<td>Fetch and merge changes from remote.</td>
-</tr>
-<tr>
-<td></td>
-<td><code>git push &lt;remote&gt; &lt;branch&gt;</code></td>
-<td>Upload local changes to remote.</td>
-</tr>
-<tr>
-<td></td>
-<td><code>git remote add &lt;name&gt; &lt;url&gt;</code></td>
-<td>Add a remote repository.</td>
-</tr>
-<tr>
-<td><strong>Cleanup and Maintenance</strong></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td><code>git clean -f</code></td>
-<td>Remove untracked files.</td>
-</tr>
-<tr>
-<td></td>
-<td><code>git clean -fd</code></td>
-<td>Remove untracked directories.</td>
-</tr>
-<tr>
-<td></td>
-<td><code>git clean -n</code></td>
-<td>Dry run to show deletions.</td>
-</tr>
-<tr>
-<td></td>
-<td><code>git gc</code></td>
-<td>Cleanup and compress.</td>
-</tr>
-<tr>
-<td><strong>Configure Toolinge</strong></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td><code>git config --global user.name &quot;[name]&quot;</code></td>
-<td>Sets the name you want attached to your commit transactions.</td>
-</tr>
-<tr>
-<td></td>
-<td><code>git config --global user.email &quot;[email address]&quot;</code></td>
-<td>Sets the email you want attached to your commit transactions.</td>
-</tr>
-<tr>
-<td></td>
-<td><code>git config --global color.ui auto</code></td>
-<td>Enables helpful colorization of command line output.</td>
-</tr>
-<tr>
-<td><strong>Create Repositories</strong></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td><code>git init</code></td>
-<td>Turns an existing directory into a new Git repository.</td>
-</tr>
-<tr>
-<td></td>
-<td><code>git remote add origin [url]</code></td>
-<td>Specifies the remote repository for your local repository. The URL points to a repository on GitHub.</td>
-</tr>
-<tr>
-<td></td>
-<td><code>git clone [url]</code></td>
-<td>Clone (download) a repository that already exists on GitHub, including all of the files, branches, and commits.</td>
+<td>cmd+k cmd+f</td>
+<td>-extension.fuzzySearch</td>
 </tr>
 </tbody>
 </table>
-<h2 id="pre-commit-hooks-">Pre-Commit Hooks 🎣</h2>
-<h3 id="installing-pre-commit-️">Installing Pre-Commit 🛠️</h3>
-<ol>
-<li>
-<p><strong>Install pre-commit</strong>: You can install <code>pre-commit</code> using pip. Run the following command in your terminal:</p>
-<pre><code class="language-bash">pip install pre-commit
-</code></pre>
-</li>
-<li>
-<p><strong>Set up pre-commit for your project</strong>: Navigate to the root directory of your Git project in the terminal. If you don't have a <code>.pre-commit-config.yaml</code> file, create one with the following content:</p>
-<pre><code class="language-yaml"><span class="hljs-attr">repos:</span>
-<span class="hljs-bullet">-</span> <span class="hljs-attr">repo:</span> <span class="hljs-string">&lt;https://github.com/pre-commit/pre-commit-hooks&gt;</span>
-    <span class="hljs-attr">rev:</span> <span class="hljs-string">v4.3.0</span>
-    <span class="hljs-attr">hooks:</span>
-  <span class="hljs-bullet">-</span> <span class="hljs-attr">id:</span> <span class="hljs-string">end-of-file-fixer</span>
-  <span class="hljs-bullet">-</span> <span class="hljs-attr">id:</span> <span class="hljs-string">trailing-whitespace</span>
-  <span class="hljs-bullet">-</span> <span class="hljs-attr">id:</span> <span class="hljs-string">check-json</span>
-<span class="hljs-bullet">-</span> <span class="hljs-attr">repo:</span> <span class="hljs-string">&lt;https://github.com/psf/black&gt;</span>
-    <span class="hljs-attr">rev:</span> <span class="hljs-number">22.10</span><span class="hljs-number">.0</span>
-    <span class="hljs-attr">hooks:</span>
-  <span class="hljs-bullet">-</span> <span class="hljs-attr">id:</span> <span class="hljs-string">black</span>
-        <span class="hljs-attr">args:</span> [<span class="hljs-string">&quot;.&quot;</span>]
-<span class="hljs-bullet">-</span> <span class="hljs-attr">repo:</span> <span class="hljs-string">&lt;https://github.com/PyCQA/isort&gt;</span>
-    <span class="hljs-attr">rev:</span> <span class="hljs-number">5.12</span><span class="hljs-number">.0</span>
-    <span class="hljs-attr">hooks:</span>
-  <span class="hljs-bullet">-</span> <span class="hljs-attr">id:</span> <span class="hljs-string">isort</span>
-        <span class="hljs-attr">args:</span> [<span class="hljs-string">--profile</span>, <span class="hljs-string">black</span>, <span class="hljs-string">&quot;.&quot;</span>]
-</code></pre>
-</li>
-<li>
-<p><strong>Install the Git Hook Scripts</strong>: Still in the root directory of your Git project, run the following command:</p>
-<pre><code class="language-bash">pre-commit install
-</code></pre>
-<p>This will install the pre-commit script in your <code>.git/</code> directory.</p>
-</li>
-<li>
-<p><strong>Test pre-commit</strong>: Make a change to a file in your repository and attempt to commit it. <code>pre-commit</code> should run and check your files.</p>
-</li>
-</ol>
-<p>Remember, <code>pre-commit</code> will only run on the staged files each time you commit. If you want to run it on all files in your repository, you can use <code>pre-commit run --all-files</code>.</p>
-<h3 id="creating-custom-git-hooks">Creating Custom Git Hooks</h3>
-<ol>
-<li>
-<p><strong>Navigate to the hooks directory</strong>: Git hooks are stored in the <code>.git/hooks</code> directory of your Git repository. Navigate to this directory using the terminal:</p>
-<pre><code class="language-bash"><span class="hljs-built_in">cd</span> path_to_your_repo/.git/hooks
-</code></pre>
-</li>
-<li>
-<p><strong>Create a new file for your hook</strong>: Git hooks are named as <code>pre-{action}</code> or <code>post-{action}</code>. For example, a <code>pre-commit</code> hook will run before each commit. Create a new file with the name of the hook you want to create. For example:</p>
-<pre><code class="language-bash"><span class="hljs-built_in">touch</span> pre-commit
-</code></pre>
-</li>
-<li>
-<p><strong>Open the file in a text editor</strong>: Open the newly created file in your preferred text editor. For example, if you're using Visual Studio Code, you can use:</p>
-<pre><code class="language-bash">code pre-commit
-</code></pre>
-</li>
-<li>
-<p><strong>Write your script</strong>: Write the script you want to run when the hook is triggered. This can be in any scripting language, but it's commonly done in Bash or Python. For example, a simple Bash script that prints a message before each commit could look like this:</p>
-<pre><code class="language-bash"><span class="hljs-meta">#!/bin/sh</span>
-<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Preparing to commit changes...&quot;</span>
-</code></pre>
-<p>The <code>#!/bin/sh</code> at the top of the script tells the system that this script should be run with <code>sh</code>, the Bourne shell.</p>
-</li>
-<li>
-<p><strong>Make the script executable</strong>: For the script to be run, it needs to be executable. You can make it executable with the following command:</p>
-<pre><code class="language-bash"><span class="hljs-built_in">chmod</span> +x pre-commit
-</code></pre>
-</li>
-<li>
-<p><strong>Test your hook</strong>: Make a commit to test your new hook. You should see the message &quot;Preparing to commit changes...&quot; before the commit is made.</p>
-</li>
-</ol>
-<p>Remember, the script you write should be relevant to the hook you're creating. For example, a <code>pre-push</code> hook might run tests, while a <code>post-commit</code> hook might send a notification of some kind.</p>
+<h2 id="prompt-templates">Prompt Templates</h2>
+<p>This section provides templates for Git commit messages and pull requests to ensure consistency and clarity. See the <a href="prompt_templates/README.html">Prompt Templates</a>.</p>
+<h2 id="reusable-code-snippets">Reusable Code Snippets</h2>
+<p>This section provides reusable code snippets in Python, JavaScript, and SQL. These snippets cover common tasks and can be copied and pasted into your code to save time. See the <a href="snippets/python_snippets/python_dict_snippets.html">Python Snippets</a>, <a href="snippets/javascript_snippets/javascript_snippets.html">JavaScript Snippets</a>, and <a href="sql_snippets.html">SQL Snippets</a> for more details.</p>
+<h2 id="git-commands-list">Git commands list</h2>
+<p>The <code>git_commands_list.md</code> file provides a list of common Git commands and their usage. This can be a handy reference when you need to perform Git operations. See the <a href="git_commands_list/git_commands_list.html">Git Commands List</a> for more details.</p>
 
         
         
