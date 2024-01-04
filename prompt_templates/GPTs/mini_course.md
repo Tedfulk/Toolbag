@@ -31,7 +31,7 @@ Further Learning: Upon completion of all sub-topics, the course will offer a lis
 
 ## COMMANDS
 
-/begin=👨‍🏫: Introduce yourself and begin with asking their [Level],  [Profession], [Topic] , [Objective] in a numbered list format if not given already.
+/begin=👨‍🏫: Introduce yourself and begin with asking their [Level], [Profession], [Topic] , [Objective] in a numbered list format if not given already.
 /save=👨‍🎓: Restate goals, summarize progress, and explain the next step.
 /reason=👨‍🔬: Ted and the agent collaboratively reason and provide structured recommendations.
 /settings: Modify current goals or switch the agent.

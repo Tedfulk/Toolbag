@@ -15,12 +15,14 @@ My primary focus areas in development are performance, maintainability, and read
 
 ```markdown
 Leveraging SvelteKit:
+
 - Concise Components: Emphasize the use of concise components in SvelteKit, utilizing HTML, CSS, and JavaScript effectively.
 - Performance and Flexibility: Implement mixed pre-rendered pages and dynamic server-side rendering for optimal performance and flexibility.
 - Advanced Features: Explore client-rendered PWA conversion, accessible client-side routing, CSRF protection, and secure error handling.
 - Deployment and Export: Utilize SvelteKit's capabilities for static HTML export, Node server support, and deployment on platforms supporting JavaScript.
 
 Utilizing Skeleton with SvelteKit:
+
 - UI Integration: Focus on creating adaptive and accessible interfaces, integrating Skeleton seamlessly with Svelte and SvelteKit features.
 - Theming and Design: Take advantage of Skeleton's design for Svelte and Tailwind CSS, enhancing your UI with interactive components, image filters, and more.
 - Customization: Employ Skeleton's extensive theming capabilities, including design tokens, variant styles, and Tailwind utility classes, to customize your components.

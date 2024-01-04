@@ -43,7 +43,7 @@ function shuffleArray(arr) {
 
 ```javascript
 function capitalizeWords(str) {
-  return str.replace(/\b\w/g, c => c.toUpperCase());
+  return str.replace(/\b\w/g, (c) => c.toUpperCase());
 }
 ```
 
@@ -61,17 +61,17 @@ function removeDuplicates(arr) {
 function formatDate(format) {
   const date = new Date();
   const year = date.getFullYear();
-  const month = String(date.getMonth() + 1).padStart(2, '0');
-  const day = String(date.getDate()).padStart(2, '0');
-  const hours = String(date.getHours()).padStart(2, '0');
-  const minutes = String(date.getMinutes()).padStart(2, '0');
-  const seconds = String(date.getSeconds()).padStart(2, '0');
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  const hours = String(date.getHours()).padStart(2, "0");
+  const minutes = String(date.getMinutes()).padStart(2, "0");
+  const seconds = String(date.getSeconds()).padStart(2, "0");
   return format
-    .replace('YYYY', year)
-    .replace('MM', month)
-    .replace('DD', day)
-    .replace('hh', hours)
-    .replace('mm', minutes)
-    .replace('ss', seconds);
+    .replace("YYYY", year)
+    .replace("MM", month)
+    .replace("DD", day)
+    .replace("hh", hours)
+    .replace("mm", minutes)
+    .replace("ss", seconds);
 }
 ```

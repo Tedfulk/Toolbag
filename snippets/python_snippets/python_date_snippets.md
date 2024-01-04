@@ -21,7 +21,7 @@ from datetime import timedelta, date
 def date_range(start, end):
     """
     Creates a list of dates between start (inclusive) and end (not inclusive).
-    
+
     :param start: The start date (inclusive).
     :param end: The end date (not inclusive).
     :return: List of dates between start and end.
@@ -54,7 +54,7 @@ from datetime import datetime
 def date_from_iso(iso_date):
     """
     Converts a date from its ISO-8601 representation.
-    
+
     :param iso_date: The ISO-8601 formatted date string.
     :return: The converted date object.
     """
@@ -75,7 +75,7 @@ Converts a date to its ISO-8601 representation.
 def date_to_iso(date):
     """
     Converts a date to its ISO-8601 representation.
-    
+
     :param date: The date object to convert.
     :return: ISO-8601 formatted date string.
     """
@@ -98,7 +98,7 @@ from dateutil.relativedelta import relativedelta
 def date_difference_in_months(date1, date2):
     """
     Calculates the month difference between two dates.
-    
+
     :param date1: The first date.
     :param date2: The second date.
     :return: The number of months between the two dates.
@@ -124,7 +124,7 @@ from datetime import datetime, timedelta
 def days_ago(n):
     """
     Calculates the date of n days ago from today.
-    
+
     :param n: The number of days ago.
     :return: The date n days ago from today.
     """
@@ -150,7 +150,7 @@ from datetime import timedelta
 def date_difference_in_days(date1, date2):
     """
     Calculates the day difference between two dates.
-    
+
     :param date1: The first date.
     :param date2: The second date.
     :return: The number of days between the two dates.
@@ -176,7 +176,7 @@ from datetime import datetime, timedelta
 def days_from_now(n):
     """
     Calculates the date of n days from today.
-    
+
     :param n: The number of days from now.
     :return: The date n days from today.
     """
@@ -199,7 +199,7 @@ Checks if the given date is a weekday.
 def is_weekday(date):
     """
     Checks if the given date is a weekday.
-    
+
     :param date: The date to check.
     :return: True if the date is a weekday, False otherwise.
     """
@@ -220,7 +220,7 @@ Checks if the given date is a weekend.
 def is_weekend(date):
     """
     Checks if the given date is a weekend.
-    
+
     :param date: The date to check.
     :return: True if the date is a weekend, False otherwise.
     """
@@ -243,7 +243,7 @@ from datetime import timedelta
 def add_days_to_date(date, n):
     """
     Calculates the date of n days from the given date.
-    
+
     :param date: The starting date.
     :param n: The number of days to add.
     :return: The date n days from the given date.

@@ -1,6 +1,6 @@
 # Business Plan
 
-Just change the {{ type of person }} and {{ desired outcome }}  variables and use the prompts in order and you're good to go.
+Just change the {{ type of person }} and {{ desired outcome }} variables and use the prompts in order and you're good to go.
 
 ## Prompt 1
 

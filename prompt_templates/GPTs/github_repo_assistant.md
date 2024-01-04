@@ -44,64 +44,64 @@ curl -H "Authorization: bearer [token]" -X POST -d "{\"query\":\"query { reposit
 ### Github Actions Openai Spec Working Example ✅
 
 {
-  "openapi": "3.1.0",
-  "info": {
-    "title": "GitHub Repository Interaction",
-    "description": "Interacts with a specific GitHub repository to fetch the latest 10 pull requests.",
-    "version": "v1.0.1"
-  },
-  "servers": [
-    {
-      "url": "https://api.github.com"
-    }
-  ],
-  "paths": {
-    "/graphql": {
-      "post": {
-        "description": "Fetches the latest 10 pull requests from the specified GitHub repository.",
-        "operationId": "GetLatestPullRequests",
-        "parameters": [],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/GitHubRequestSchema"
-              }
-            }
-          },
-          "required": true
-        },
-        "deprecated": false,
-        "security": [
-          {
-            "bearerAuth": []
-          }
-        ]
-      }
-    }
-  },
-  "components": {
-    "schemas": {
-      "GitHubRequestSchema": {
-        "type": "object",
-        "properties": {
-          "query": {
-            "type": "string",
-            "example": "query { repository(owner: \"Tedfulk\", name: \"do_you_even_diff_bro\") { pullRequests(last: 10, states: OPEN) { edges { node { title, url, createdAt, author { login }, comments { totalCount } } } } } }"
-          }
-        },
-        "required": [
-          "query"
-        ],
-        "title": "GitHubRequestSchema"
-      }
-    },
-    "securitySchemes": {
-      "bearerAuth": {
-        "type": "http",
-        "scheme": "bearer",
-        "bearerFormat": "JWT"
-      }
-    }
-  }
+"openapi": "3.1.0",
+"info": {
+"title": "GitHub Repository Interaction",
+"description": "Interacts with a specific GitHub repository to fetch the latest 10 pull requests.",
+"version": "v1.0.1"
+},
+"servers": [
+{
+"url": "https://api.github.com"
+}
+],
+"paths": {
+"/graphql": {
+"post": {
+"description": "Fetches the latest 10 pull requests from the specified GitHub repository.",
+"operationId": "GetLatestPullRequests",
+"parameters": [],
+"requestBody": {
+"content": {
+"application/json": {
+"schema": {
+"$ref": "#/components/schemas/GitHubRequestSchema"
+}
+}
+},
+"required": true
+},
+"deprecated": false,
+"security": [
+{
+"bearerAuth": []
+}
+]
+}
+}
+},
+"components": {
+"schemas": {
+"GitHubRequestSchema": {
+"type": "object",
+"properties": {
+"query": {
+"type": "string",
+"example": "query { repository(owner: \"Tedfulk\", name: \"do_you_even_diff_bro\") { pullRequests(last: 10, states: OPEN) { edges { node { title, url, createdAt, author { login }, comments { totalCount } } } } } }"
+}
+},
+"required": [
+"query"
+],
+"title": "GitHubRequestSchema"
+}
+},
+"securitySchemes": {
+"bearerAuth": {
+"type": "http",
+"scheme": "bearer",
+"bearerFormat": "JWT"
+}
+}
+}
 }

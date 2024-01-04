@@ -43,9 +43,9 @@ Simple Demonstration:
 json
 Copy code
 {
-  "problem_description": "Need a way to create various but related objects without specifying their exact classes.",
-  "suggested_pattern": "Abstract Factory",
-  "rationale": "Allows for the creation of families of related objects without specifying their concrete classes, offering flexibility in object creation.",
-  "implementation_guideline": "Define abstract factories with corresponding concrete classes. Ensure that these factories create related objects.",
-  "example_code": "class AbstractFactory {...} class ConcreteFactory1 extends AbstractFactory {...}"
+"problem_description": "Need a way to create various but related objects without specifying their exact classes.",
+"suggested_pattern": "Abstract Factory",
+"rationale": "Allows for the creation of families of related objects without specifying their concrete classes, offering flexibility in object creation.",
+"implementation_guideline": "Define abstract factories with corresponding concrete classes. Ensure that these factories create related objects.",
+"example_code": "class AbstractFactory {...} class ConcreteFactory1 extends AbstractFactory {...}"
 }

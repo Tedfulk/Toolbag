@@ -20,31 +20,31 @@ This section provides a list of useful command line tools for tasks such as data
 
 This section provides a list of common keyboard shortcuts for tasks such as finding files and symbols, changing tabs, and selecting between brackets for example. See the [Keyboard Shortcuts](#keyboard-shortcuts).
 
-| Key                     | Command                                        |
-| ----------------------- | ---------------------------------------------- |
-| shift+cmd+f             | -workbench.action.findInFiles                  |
-| shift+cmd+f             | -workbench.action.terminal.searchWorkspace     |
-| alt+r                   | python.execInTerminal                          |
-| ctrl+j                  | editor.action.rename                           |
-| ctrl+z                  | editor.action.revealDefinition                 |
-| f12                     | -editor.action.revealDefinition                |
-| ctrl+shift+space        | workbench.files.action.focusFilesExplorer      |
-| ctrl+shift+f            | workbench.view.search.focus                    |
-| cmd+]                   | workbench.action.navigateForward               |
-| ctrl+shift+-            | -workbench.action.navigateForward              |
-| cmd+e                   | workbench.view.explorer                        |
-| shift+cmd+e             | -workbench.view.explorer                       |
-| cmd+l                   | editor.action.selectHighlights                 |
-| shift+cmd+l             | -editor.action.selectHighlights                |
-| cmd+[                   | workbench.action.navigateBack                  |
-| ctrl+-                  | -workbench.action.navigateBack                 |
-| ctrl+shift+alt+cmd+r    | workbench.action.splitEditorRight              |
-| alt+cmd+p               | -toggleSearchPreserveCase                      |
-| ctrl+l                  | workbench.action.gotoLine                      |
-| cmd+t                   | -workbench.action.showAllSymbols               |
-| cmd+p                   | -workbench.action.quickOpenNavigateNextInFilePicker |
-| ctrl+shift+alt+cmd+f    | extension.fuzzySearch                          |
-| cmd+k cmd+f             | -extension.fuzzySearch                         |
+| Key                  | Command                                             |
+| -------------------- | --------------------------------------------------- |
+| shift+cmd+f          | -workbench.action.findInFiles                       |
+| shift+cmd+f          | -workbench.action.terminal.searchWorkspace          |
+| alt+r                | python.execInTerminal                               |
+| ctrl+j               | editor.action.rename                                |
+| ctrl+z               | editor.action.revealDefinition                      |
+| f12                  | -editor.action.revealDefinition                     |
+| ctrl+shift+space     | workbench.files.action.focusFilesExplorer           |
+| ctrl+shift+f         | workbench.view.search.focus                         |
+| cmd+]                | workbench.action.navigateForward                    |
+| ctrl+shift+-         | -workbench.action.navigateForward                   |
+| cmd+e                | workbench.view.explorer                             |
+| shift+cmd+e          | -workbench.view.explorer                            |
+| cmd+l                | editor.action.selectHighlights                      |
+| shift+cmd+l          | -editor.action.selectHighlights                     |
+| cmd+[                | workbench.action.navigateBack                       |
+| ctrl+-               | -workbench.action.navigateBack                      |
+| ctrl+shift+alt+cmd+r | workbench.action.splitEditorRight                   |
+| alt+cmd+p            | -toggleSearchPreserveCase                           |
+| ctrl+l               | workbench.action.gotoLine                           |
+| cmd+t                | -workbench.action.showAllSymbols                    |
+| cmd+p                | -workbench.action.quickOpenNavigateNextInFilePicker |
+| ctrl+shift+alt+cmd+f | extension.fuzzySearch                               |
+| cmd+k cmd+f          | -extension.fuzzySearch                              |
 
 ## Prompt Templates
 
