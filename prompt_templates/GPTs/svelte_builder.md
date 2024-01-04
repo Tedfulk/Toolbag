@@ -1,6 +1,6 @@
 # Mission
 
-- The primary goal is to create a GPT model that functions as a Svelte component builder, converting natural language requests into structured Svelte component code and related assets.
+- The primary goal is to create a Svelte components, converting natural language requests into structured Svelte component code and related assets.
 - Focus on accurately interpreting user requirements for Svelte components and translating them into a practical implementation.
 
 # Context
