@@ -2,18 +2,16 @@
 
 There are only a handful of ways to "teach" LLMs, and all have limitations and strengths.
 
-1. Initial bulk training: Ludicrously expensive
-2. Finetuning: Not necessarily useful for knowledge retrieval (maybe changes in the future, doubtful)
+1. Initial bulk training: very expensive
+2. Finetuning: Not necessarily useful for knowledge retrieval
 3. Online Learning: Not sure if this is going to pan out or become commercially viable
 4. In-context Learning: Presently, the only viable solution
 
-Because of this, RAG (retrieval augmented generation) is all the rage right now. Tools like vector databases and KGs are being used, but of course, you quickly fill up the context window with "dumb retrieval." One of the most common questions I get is "Dave, how do you overcome context window limitations???" The short answer is: YOU DON'T STOP WASTING YOUR TIME.
+Because of this, RAG (retrieval augmented generation) is all the rage right now. Tools like vector databases and KGs are being used, but of course, you quickly fill up the context window with "dumb retrieval."
 
-There is one asterisk there, though.
+Most of the techniques out there do not make use of the best super power that LLMs have: LATENT SPACE. LLMs work similar to human minds: _associative learning_. You can "prime" models to even understand complex, novel ideas that were outside its training distribution. For instance, you can "teach" the model new things just from well described context and it's all made up outside the training data.
 
-Most of the techniques out there do not make use of the best super power that LLMs have: LATENT SPACE. No one else seems to understand that there is one huge way that LLMs work similar to human minds: _associative learning_. Here's the story: I realized a long time ago that, with just a few words, you could "prime" LLMs to think in a certain way. I did a bunch of experiments and found that you can "prime" models to even understand complex, novel ideas that were outside its training distribution. For instance, I "taught" the models some of my concepts, like Heuristic Imperatives, ACE Framework, Terminal Race Condition, and a bunch of other stuff that I made up outside the training data.
-
-These SPRs are the most token-efficient way to convey complex concept to models for in-context learning. What you do is you compress huge blocks of information, be it company data, chat logs, specific events, or whatever, into SPRs and then you store the SPR in the metadata for of your KG node or whatever. The SPR is what you feed to the LLM at inference, not the raw human-readable data.
+These SPRs are the most token-efficient way to convey complex concept to models for in-context learning. What you do is you compress huge blocks of information, be it company data, chat logs, specific events, or whatever, into SPRs and then you store the SPR in the metadata for of your KB or whatever. The SPR is what you feed to the LLM at inference, not the raw human-readable data. The SPR strategy is a little lossy, but it's the one of the most efficient way to convey complex concepts to models with a small number of tokens. It's also a great way to "teach" models new things that are outside its training distribution. I've also added a decomperessor so that you can unpack the SPR into the original text.
 
 ## SPR Generator
 
@@ -28,6 +26,9 @@ LLMs are a kind of deep neural network. They have been demonstrated to embed kno
 
 # METHODOLOGY
 Render the input as a distilled list of succinct statements, assertions, associations, concepts, analogies, and metaphors. The idea is to capture as much, conceptually, as possible but with as few words as possible. Write it in a way that makes sense to you, as the future audience will be another language model, not a human.
+
+# Input
+{{ input }}
 ```
 
 ## SPR Decompressor
@@ -43,4 +44,7 @@ LLMs are a kind of deep neural network. They have been demonstrated to embed kno
 
 # METHODOLOGY
 Use the primings given to you to fully unpack and articulate the concept. Talk through every aspect, impute what's missing, and use your ability to perform inference and reasoning to fully elucidate this concept. Your output should in the form of the original article, document, or material.
+
+# Input
+{{ input }}
 ```

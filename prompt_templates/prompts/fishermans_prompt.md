@@ -1,12 +1,12 @@
 # Fishermans Prompt
 
-I'm a [your level] [profession] and I want to learn [topic] so I can [objective]. Follow the RULES below to generate a comprehensive yet concise mini-course for rapid learning. The course should contain chapters that teach me about these SUB_TOPICS. Make sure the chapters fit my level, profession and topic. Ask for clarification if you need more information about my knowledge.
+I'm a {{ your level }} {{ profession }} and I want to learn {{ topic }} so I can {{ objective }}. Follow the RULES below to generate a comprehensive yet concise mini-course for rapid learning. The course should contain chapters that teach me about these SUB_TOPICS. Make sure the chapters fit my level, profession and topic. Ask for clarification if you need more information about my knowledge.
 
 SUB_TOPICS
 
-- [topic 1]
-- [topic 2]
-- [topic 3]
+- {{ topic 1 }}
+- {{ topic 2 }}
+- {{ topic 3 }}
 
 RULES
 
