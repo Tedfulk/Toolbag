@@ -30,7 +30,7 @@ async function convertHtmlToMarkdown(filePath) {
     }
 }
 
-const directoryPath = "./prompt_templates/GPTs/knowledge_base/";
+const directoryPath = "./prompt_templates/GPTs/knowledge_base";
 const files = fs.readdirSync(directoryPath).filter((file) => file.endsWith(".json"));
 for (const file of files) {
     const filePath = path.join(directoryPath, file);
