@@ -14,8 +14,8 @@ async function convertHtmlToMarkdown(filePath) {
         // Iterate over each object in the JSON data
         for (const obj of jsonData) {
             // Convert the HTML to Markdown
-            const markdown = turndownService.turndown(obj.html);
-
+            const markdownWithBackSlash = turndownService.turndown(obj.html);
+            const markdown = markdownWithBackSlash.replace(/\\/g, "");
             // Replace the HTML with the Markdown
             obj.html = markdown;
         }
