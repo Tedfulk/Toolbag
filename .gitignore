@@ -1,12 +1,36 @@
 
-# Default gitignore content
+# OS Files
 .DS_Store
+__pycache__/
+# Node.js Files
 node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+knowledge/
+# Environment Files
 .env
 
+# Build Output
+/dist/
+
+# Logs
+/logs/
+
+# Editor Files
+.idea/
+.vscode/
+
+# Dependency Lock Files
+/package-lock.json
+/yarn.lock
+
+# Custom Rules
+# BEGIN: abpxx6d04wxr
+# Default gitignore content
+
+# Custom Rules
+# BEGIN: be15d9bcejpp
 # Ignore all html files except for index.html
 *.html
 # This file tells Git which files shouldn't be added to source control
