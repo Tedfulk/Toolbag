@@ -7,7 +7,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-tedfulk-kb-pycrawler = "^0.1.4"
+tedfulk-kb-pycrawler = "^0.1.5"
 
 
 [build-system]
