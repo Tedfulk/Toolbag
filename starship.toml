@@ -1,0 +1,50 @@
+format = """
+$directory\
+$git_branch\
+$git_status\
+$python\
+$nodejs\
+$fill\
+$time\
+$line_break\
+$character"""
+
+[nodejs]
+format = "($version )($style)"
+
+[fill]
+symbol = " "
+
+[git_branch]
+symbol = '🌱 '
+
+[git_status]
+conflicted = '🏳'
+ahead = '🏎💨${count}'
+behind = '😰${count}'
+diverged = '😵🏎💨${ahead_count}😰${behind_count}'
+up_to_date = '💰'
+untracked = '🤷'
+stashed = '📦'
+modified = '📝'
+staged = '[++\($count\)](green)'
+renamed = '👅'
+deleted = '🗑'
+
+[python]
+format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+
+[directory]
+style = "bold cyan"
+truncation_length = 1
+format = "[$path]($style) "
+
+
+[character]
+success_symbol = "[❯](purple)"
+error_symbol = "[❯](red)"
+
+[time]
+disabled = false
+style = "bold white"
+format = "[$time]($style)"
