@@ -1,4 +1,4 @@
-model: mixtral:latest
+model: dolphin-mixtral:8x7b-v2.7
 system: '# MISSION
 
 
